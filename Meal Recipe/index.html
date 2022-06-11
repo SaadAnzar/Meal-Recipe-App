@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Meal Recipe</title>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Meal Recipe</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="#browse" class="nav__link">Browse</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h2 class="home__title">Cooking Made Easy.</h2>
+                    <p class="about__description">Say good bye to long and frustrating
+                        food blogs and recipe videos. Access
+                        our recipe cards to prepare any meal
+                        in minutes.</p>
+                    <a href="#browse" class="button">Browse Meal</a>
+                </div>
+
+                <img src="assets/img/home.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== ABOUT US ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <h2 class="section-title about__initial">About Us</h2>
+                    <p class="about-description">When you need to feed the family or kids, these are the easy recipes
+                        you turn to time and time again. With lots of healthy, quick, vegetarian, chicken, and
+                        budget-friendly ideas, there’s something for everyone..<br>Just enter the ingredients available to you, and you will get number of recipes you can make using those ingredients.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============ Browse ========== -->
+        <section class="browse section bd-container" id="browse">
+            <div class="browse__container bd-grid">
+                <div class="meal-wrapper">
+                    <div class="meal-search">
+                        <h2 class="title">Find Meals For Your Ingredients</h2>
+                        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+                            <cite>- Jamie Oliver</cite>
+                        </blockquote>
+
+                        <div class="meal-search-box">
+                            <input type="text" class="search-control" placeholder="Enter an ingredient"
+                                id="search-input">
+                            <button type="submit" class="search-btn btn" id="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="meal-result">
+                        <h2 class="title">Your Search Results:</h2>
+                        <div id="meal"></div>
+                    </div>
+
+
+                    <div class="meal-details">
+                        <!-- recipe close btn -->
+                        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <!-- meal content -->
+                        <div class="meal-details-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <h2 class="section-title contact__initial">Contact Us</h2>
+                    <span class="section-subtitle contact__initial">Tell us more about recipes and ingredients.<br>And if you have any query or any suggestion, feel free to drop a message to us.</span>
+                    <p class="contact__description"></p>
+                </div>
+
+                <form name="contact" netlify class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Message</label>
+                            <textarea name="" id="" class="contact_input" cols="18" rows="6"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div>
+            <p class="footer_copy">
+                Copyright &copy; 2022. All Rights Reserved.
+            </p>
+            <p class="footer_copy1">
+                Developed with &#9829; by&nbsp;<strong>Anzar Ahmad</strong>
+            </p>
+        </div>
+
+        <div class="footer_socials">
+            <a href="https://www.linkedin.com/in/anzarahmad" class="footer_social">
+                <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a href="https://www.github.com/SaadAnzar" class="footer_social">
+                <i class="uil uil-github"></i>
+            </a>
+
+            <a href="https://www.instagram.com/saad.anzar" class="footer_social">
+                <i class="uil uil-instagram-alt"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
