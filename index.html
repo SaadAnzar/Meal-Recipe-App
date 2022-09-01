@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =========== Favicon =========== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+
+    <title>Meal Recipe</title>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Meal Recipe</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#recipe" class="nav__link">Browse</a></li>
+                    <!-- <li class="nav__item"><a href="#special" class="nav__link">Special</a></li> -->
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h2 class="home__title">Learn.Cook.Share.<br>Cooking Made Easy.</h2>
+                    <p class="home__subtitle">
+                        Say good bye to long and frustrating food blogs and recipe videos. Access our recipe cards to
+                        prepare any meal in minutes.</p>
+                    <a href="#recipe" class="button">Browse Meal</a>
+                </div>
+
+                <img src="assets/img/home.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">About Us</span>
+                    <h4 class="about__initial">When you need to feed the family or kids, these are the easy recipes you
+                        turn to time and time again. With lots of healthy, quick, vegetarian, chicken, and
+                        budget-friendly ideas, there’s something for everyone..</h4>
+                    <p class="about__description">
+                        Just enter the ingredients available to you, and you will get number of recipes you can make
+                        using those ingredients.</p>
+                </div>
+
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--========== BROWSE ==========-->
+        <section class="services section recipe bd-container" id="recipe">
+            <h1 class="section-subtitle">Find Meals For Your Ingredients</h1>
+            <blockquote style="text-align: center;">Real food doesn't have ingredients, real food is ingredients.<br>
+                <cite>- Jamie Oliver</cite>
+            </blockquote>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+                    <div class="container">
+                        <div class="meal-wrapper">
+                            <div class="meal-search">
+                                <div class="meal-search-box">
+                                    <input type="text" class="search-control" placeholder="Enter an ingredient"
+                                        id="search-input">
+                                    <button type="submit" class="search-btn btn" id="search-btn">
+                                        <i class="bx bx-search-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="meal-result">
+                                <h2 class="title">Your Search Results:</h2>
+                                <div id="meal">
+                                    <!-- meal item -->
+                                    <!-- <div class = "meal-item">
+                                <div class = "meal-img">
+                                  <img src = "food.jpg" alt = "food">
+                                </div>
+                                <div class = "meal-name">
+                                  <h3>Potato Chips</h3>
+                                  <a href = "#" class = "recipe-btn">Get Recipe</a>
+                                </div>
+                              </div> -->
+                                    <!-- end of meal item -->
+                                </div>
+                            </div>
+
+
+                            <div class="meal-details">
+                                <!-- recipe close btn -->
+                                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                                    <i class="bx bx-x"></i>
+                                </button>
+
+                                <!-- meal content -->
+                                <div class="meal-details-content">
+                                    <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+                              <p class = "recipe-category">Category Name</p>
+                              <div class = "recipe-instruct">
+                                <h3>Instructions:</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                              </div>
+                              <div class = "recipe-meal-img">
+                                <img src = "food.jpg" alt = "">
+                              </div>
+                              <div class = "recipe-link">
+                                <a href = "#" target = "_blank">Watch Video</a>
+                              </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== SPECIAL ==========-->
+        <!-- <section class="menu section bd-container" id="special">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title">Search of the Week</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="assets/img/plate1.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Barbecue Salad</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/plate2.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Salmon Avocado Salad</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/plate3.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Spinach salad</h3>
+                    <span class="menu__detail">Delicious dish</span>
+                </div>
+        </section> -->
+
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Let's talk</span>
+                    <h2 class="section-title contact__initial">Contact us</h2>
+                    <p class="contact__description">If you want to tell us more about recipes and ingredients,
+                        and if you have any query or any suggestion, feel free to contact us on Instagram.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="https://www.instagram.com/saad.anzar" class="button" target="_blank">Connect on <i
+                            style="color:white;" class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+    <hr style="width: 80%; align-items:center;">
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer" id="footer">
+        <div class="footer_copy">
+            &copy; 2022. &#10094;&#8725;&#10095; by&nbsp;<strong>Anzar Ahmad</strong>
+        </div>
+
+        <div class="footer_socials">
+            <a href="https://www.linkedin.com/in/anzarahmad" target="_blank" class="footer_social">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <a href="https://www.github.com/SaadAnzar" target="_blank" class="footer_social">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://www.instagram.com/saad.anzar" target="_blank" class="footer_social">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
